@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using TesteTecnicoBenner.Models;
+using TesteTecnicoBenner.Models.Pedidos;
+using TesteTecnicoBenner.Models.Pessoas;
+using TesteTecnicoBenner.Models.Produtos;
 using TesteTecnicoBenner.Services;
 
 namespace TesteTecnicoBenner.Views.Pedidos

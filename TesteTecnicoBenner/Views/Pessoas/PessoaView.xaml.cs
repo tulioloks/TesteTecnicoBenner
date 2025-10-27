@@ -4,7 +4,8 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
-using TesteTecnicoBenner.Models;
+using TesteTecnicoBenner.Models.Pedidos;
+using TesteTecnicoBenner.Models.Pessoas;
 using TesteTecnicoBenner.Services;
 using TesteTecnicoBenner.Views.Pedidos;
 

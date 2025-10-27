@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows;
 using System.Windows.Controls;
-using TesteTecnicoBenner.Models;
+using TesteTecnicoBenner.Models.Produtos;
 
 namespace TesteTecnicoBenner.Views.Produtos
 {

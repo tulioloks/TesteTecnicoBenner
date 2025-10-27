@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
-using TesteTecnicoBenner.Models;
+using TesteTecnicoBenner.Models.Produtos;
 using TesteTecnicoBenner.Services;
 
 namespace TesteTecnicoBenner.Views.Produtos

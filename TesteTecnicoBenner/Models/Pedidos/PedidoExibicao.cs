@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace TesteTecnicoBenner.Models
+namespace TesteTecnicoBenner.Models.Pedidos
 {
     public class PedidoExibicao
     {

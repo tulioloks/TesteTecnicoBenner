@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
-using TesteTecnicoBenner.Models;
+using TesteTecnicoBenner.Models.Pessoas;
 using TesteTecnicoBenner.Services;
 
 namespace TesteTecnicoBenner.Views.Pessoas

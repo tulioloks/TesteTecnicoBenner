@@ -1,4 +1,4 @@
-﻿namespace TesteTecnicoBenner.Models
+﻿namespace TesteTecnicoBenner.Models.Produtos
 {
     public class ProdutoPedido
     {

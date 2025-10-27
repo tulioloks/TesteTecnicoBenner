@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using TesteTecnicoBenner.Models.Pedidos;
 
-namespace TesteTecnicoBenner.Models
+namespace TesteTecnicoBenner.Models.Pessoas
 {
     public class Pessoa
     {

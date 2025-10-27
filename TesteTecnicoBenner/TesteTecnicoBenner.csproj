@@ -63,8 +63,8 @@
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\ProdutoPedido.cs" />
-    <Compile Include="Models\PedidoExibicao.cs" />
+    <Compile Include="Models\Produtos\ProdutoPedido.cs" />
+    <Compile Include="Models\Pedidos\PedidoExibicao.cs" />
     <Compile Include="Services\JsonService.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -91,9 +91,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Pedido.cs" />
-    <Compile Include="Models\Pessoa.cs" />
-    <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\Pedidos\Pedido.cs" />
+    <Compile Include="Models\Pessoas\Pessoa.cs" />
+    <Compile Include="Models\Produtos\Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -151,9 +151,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>

@@ -2,7 +2,6 @@
 
 🚀 Como executar o projeto
 1. Pré-requisitos
-* Visual Studio 2022 ou superior
 * .NET Framework 4.6 instalado
 * Visual Studio 2017 ou superior com suporte ao .NET Framework 4.6
 

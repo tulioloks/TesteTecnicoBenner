@@ -42,7 +42,7 @@ namespace TesteTecnicoBenner.Views.Pessoas
 
             if (string.IsNullOrEmpty(nome) || string.IsNullOrEmpty(cpf))
             {
-                MessageBox.Show("Preencha todos os campos.");
+                MessageBox.Show("Preencha os campos nome e cpf para continuar.");
                 return;
             }
 

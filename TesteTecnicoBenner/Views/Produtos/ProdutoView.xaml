@@ -1,0 +1,67 @@
+﻿<Window x:Class="TesteTecnicoBenner.Views.Produtos.ProdutoView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cadastro de Produtos"
+        Height="720" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Filtros -->
+            <RowDefinition Height="*"/>
+            <!-- Grid -->
+            <RowDefinition Height="Auto"/>
+            <!-- Botões -->
+        </Grid.RowDefinitions>
+
+        <!-- Filtros -->
+        <GroupBox Header="Filtros de Produto" Grid.Row="0" Margin="0,0,0,10">
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <StackPanel Margin="5">
+                    <TextBlock Text="Nome"/>
+                    <TextBox x:Name="txtNomeFiltro" Width="200" ToolTip="Filtrar por nome"/>
+                </StackPanel>
+                <StackPanel Margin="5">
+                    <TextBlock Text="Código"/>
+                    <TextBox x:Name="txtCodigoFiltro" Width="200" ToolTip="Filtrar por código"/>
+                </StackPanel>
+                <StackPanel Margin="5">
+                    <TextBlock Text="Valor Mínimo"/>
+                    <TextBox x:Name="txtValorMin" Width="100" ToolTip="Valor mínimo"/>
+                </StackPanel>
+                <StackPanel Margin="5">
+                    <TextBlock Text="Valor Máximo"/>
+                    <TextBox x:Name="txtValorMax" Width="100" ToolTip="Valor máximo"/>
+                </StackPanel>
+                <Button Content="Filtrar" Width="100" Margin="10,20,0,0" Click="Filtrar_Click"/>
+            </StackPanel>
+        </GroupBox>
+
+        <!-- Grid de Produtos -->
+        <GroupBox Header="Lista de Produtos" Grid.Row="1" Margin="0,0,0,10">
+            <DataGrid x:Name="dgProdutos"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      SelectionMode="Single"
+                      SelectionUnit="FullRow"
+                      CanUserAddRows="False"
+                      CanUserDeleteRows="False"
+                      Height="300"
+                      Margin="5">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                    <DataGridTextColumn Header="Nome" Binding="{Binding Nome}" Width="200"/>
+                    <DataGridTextColumn Header="Valor" Binding="{Binding Valor, StringFormat=F2}" Width="100"/>
+                    <DataGridTextColumn Header="Código" Binding="{Binding Codigo}" Width="150"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+
+        <!-- Botões de Ação -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+            <Button Content="Incluir" Width="100" Margin="5" Click="Incluir_Click"/>
+            <Button Content="Editar" Width="100" Margin="5" Click="Editar_Click"/>
+            <Button Content="Excluir" Width="100" Margin="5" Click="Excluir_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

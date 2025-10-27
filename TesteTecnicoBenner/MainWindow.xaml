@@ -1,0 +1,33 @@
+﻿<Window x:Class="TesteTecnicoBenner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sistema de Cadastro"
+        Height="500" Width="700"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Título -->
+            <RowDefinition Height="*"/>
+            <!-- Botões -->
+        </Grid.RowDefinitions>
+
+        <!-- Título -->
+        <TextBlock Grid.Row="0"
+                   Text="Bem-vindo ao Sistema de Cadastro"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,30"/>
+
+        <!-- Área de botões -->
+        <GroupBox Grid.Row="1" Header="Acessar Módulos" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+            <StackPanel Margin="30">
+                <Button Content="Cadastro de Pessoas" Height="50" Margin="10" FontSize="16" Click="AbrirPessoa_Click"/>
+                <Button Content="Cadastro de Produtos" Height="50" Margin="10" FontSize="16" Click="AbrirProduto_Click"/>
+                <Button Content="Cadastro de Pedidos" Height="50" Margin="10" FontSize="16" Click="VisualizarPedidos_Click"/>
+            </StackPanel>
+        </GroupBox>
+    </Grid>
+</Window>
